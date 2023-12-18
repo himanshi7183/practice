@@ -26,10 +26,11 @@ class CourseController {
   };
 
   static courseDisplay = async (req, res) => {
+
     try {
       const {n,image,id} = req.data1  // yha jo y n,id,e,image likha hai wo user.js m jo hai wo waale hai
       const data = await CourseModel.find({user_id:id});
-      // console.log(data)
+      console.log(data)
       res.render("courseDisplay",{ d:data,msg:req.flash('success'),name:n,image:image});
     } catch (error) {
       console.log(error);
@@ -51,7 +52,7 @@ class CourseController {
       const data = await CourseModel.findById(req.params._id);
       const {n,_id,e,image} = req.data1  // yha jo y n,id,e,image likha hai wo user.js m jo hai wo waale hai
       console.log(data);
-      res.render("courseEdit", { d: data ,name:n,image:image});
+      res.render("courseEdit", { d: data ,name:n,image:image,});
     } catch (error) {
       console.log(error);
     }

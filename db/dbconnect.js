@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const url = "mongodb://0.0.0.0:27017/practice";
 const liveurl =
-  'mongodb+srv://himanshipachouri:Himanshi7183@cluster0.m4lzjcg.mongodb.net/?retryWrites=true&w=majority';
+  'mongodb+srv://himanshipachouri:himanshi7183@cluster0.ebr63fa.mongodb.net/?retryWrites=true&w=majority';
 const connectdb = () => {
   return mongoose
     .connect(liveurl)
