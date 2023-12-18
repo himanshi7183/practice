@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="./css/dashboard_responsive.css" />
+
+    <link rel="stylesheet" href="/css/about.css" />
+
+    <link rel="stylesheet" href="/css/Contact.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm  navbar-dark bg">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-4 pb-2" href="">
+          <img
+            src="/image/logo (1).png"
+            class="img-fluid"
+            width="90px"
+            alt="mpct logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav mx-auto nav-list">
+            <li class="nav-item">
+              <a class="nav-link a" href="/dashboard">Home</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link a" href="/about">About</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link a" href="/contact">Contact</a>
+            </li>
+          </ul>
+           
+          <!-- profile image -->
+          <div class="profile ms-5 pe-5">
+            <a href="" > <img src="<%= image.url %>"  alt="" width="100px" height="110px"></a>
+            </div>
+            <!-- name --> 
+            <div class="dropdown">
+              <h6>
+                
+                <button class="btn  dropdown-toggle me-5" type="button" data-bs-toggle="dropdown">
+                  <%=  name %>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                  <li><a class="dropdown-item" href="/">Logout</a></li>
+                </ul>
+              </h6>
+            </div>
+      </div>
+    </nav>
+
+<br></br>
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="col-md-6 mx-auto shadow-lg"
+      style="height: 570px; "
+    >
+      <div
+        class="container-fluid mt-3 py-4"
+        style="
+          border-radius: 25px;
+          box-shadow: 5px 5px 5px 5px rgb(225, 223, 223);
+        "
+      >
+        <div class="row">
+          <div class="col-md-3">
+            <a href="/profile" class="">
+              <center>
+                <img
+                  src="<%= image.url %>"
+                  width="160px"
+                  height="180px"
+                  class="rounded-circle  border-dark"
+                />
+              </center>
+            </a>
+          </div>
+          <div class="col-md-9" style="padding-left: 72px">
+            <h3></h3>
+            <ul>
+              <li>
+                <h5 style="display: inline; ">
+                  Name:  <%= name %>
+                </h5>
+                
+              </li>
+              <li>
+                <h5 style="display: inline; ">
+                  Email: <%= email %>
+                </h5>
+               
+              </li>
+              <li>
+                <h5 style="display: inline;">
+                  Phone: <%= phone %>
+                </h5>
+               
+              </li>
+              <li>
+                <h5 style="display: inline; ">
+                  Course: <%= course %>
+                </h5>
+               
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a
+        href="#"
+        data-bs-target="#update"
+        data-bs-toggle="modal"
+        class="nav-link"
+      >
+        <div
+          class="col-md-12 mt-5 py-3"
+          style="
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px 5px rgb(225, 223, 223);
+            padding-left: 18px;
+          "
+        >
+          Update profile info.
+        </div>
+      </a>
+     
+
+      <a
+        href="#"
+        data-bs-target="#changepass"
+        data-bs-toggle="modal"
+        class="nav-link"
+      >
+        <div
+          class="col-md-12 mt-4 py-3"
+          style="
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px 5px rgb(225, 223, 223);
+            padding-left: 18px;
+          "
+        >
+          Change password
+        </div>
+      </a>
+
+      <a href="/logout" 65 class="nav-link mb-5">
+        <div
+          class="col-md-12 mt-4 py-3"
+          style="
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px 5px rgb(225, 223, 223);
+            padding-left: 18px;
+          "
+        >
+          Logout
+        </div>
+      </a>
+    <br> <br>
+      <% if(error.length>0){ %>
+        <div class="alert alert-danger">
+            <%= error %>
+        </div>
+        <% }%>
+
+        <% if(success.length>0){ %>
+            <div class="alert alert-success">
+                <%= success %>
+            </div>
+            <% }%>
+    </div>
+    <!--outer box-->
+  </div>
+  <br><br>
+  <!--container fluid end-->
+</div>
+
+<!--update profile modal-->
+<div
+  class="modal fade"
+  id="update"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">B Tech</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form
+          action="/update_profile"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label>Name:</label>
+            <input
+              type="text"
+              name="name"
+              value="<%= name %>"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value="<%= email %>"
+              readonly
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Add a phone no:</label>
+            <input
+              type="number"
+              name="phone"
+              value="<%= phone %>"
+              class="form-control"
+            />
+          </div>
+          <div>
+            <label>Update image</label>
+            <input type="file" name="image" class="form-control" required />
+            <img src="<%= image.url %>" width="50px" />
+          </div>
+
+          <button class="btn btn-info" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--change pass modal-->
+<div
+  class="modal fade"
+  id="changepass"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">B Tech</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="/update_password" method="post">
+          <div class="mb-3">
+            <label>Current Password</label>
+            <input
+              type="password"
+              name="currentpass"
+              value=""
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>New Passsword</label>
+            <input type="password" name="npass" value="" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label>Confirm new password</label>
+            <input type="password" name="cpass" class="form-control" />
+          </div>
+
+          <button class="btn btn-info" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<%- include('../views/footer.ejs')  %>

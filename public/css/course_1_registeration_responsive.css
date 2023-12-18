@@ -1,0 +1,25 @@
+/* navbar */
+@media (max-width:570px) {
+    .a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+      
+  }
+  @media (max-width:570px) {
+    .b{
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      margin: 0px 95px;  
+    } 
+  }
+  @media (max-width:570px) {
+    .profile-photo{
+      /* margin-top: 10px; */
+      margin: 10px  130px;  
+      height: 110px;
+    } 
+  }

@@ -1,0 +1,867 @@
+<%- include('./header.ejs') %>
+<!-- Carousel -->
+<div id="a" class="carousel dashboard" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#a"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#"
+      data-bs-slide-to="1"
+      class="active"
+      aria-current="true"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#a"
+      data-bs-slide-to="2"
+      class="active"
+      aria-current="true"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img
+        src="	http://www.mpct.org/images/up-bg2.jpg"
+        class="d-block w-100"
+        height="520px"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="	http://www.mpct.org/images2/black-bg.jpg"
+        class="d-block w-100"
+        height="520px"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="	http://www.mpct.org/images2/banner.jpg"
+        class="d-block w-10"
+        height="570px"
+        alt="..."
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#a"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon"></span>
+    <!-- <span class="visually-hidden">Previous</span> -->
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#a"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon"></span>
+    <!-- <span class="visually-hidden">Next</span> -->
+  </button>
+</div>
+
+<!-- wlcome mpct -->
+<section class="wlcm-mpct">
+  <div class="container-fluid">
+    <div class="container bg-1">
+      <div class="wlcm-para text-center">
+        <h1>Welcome to MPCT</h1>
+        <p>
+          Pratap Vahini Samaj Kalyan Sansthan, Gwalior was incepted in 1995
+          after the due registration from Registrar, Firms &amp; Society, M.P.
+          Govt. The society was established by Lt. Shri Ram Singh Dhakre and his
+          associates. The society established the first Engg.<br />
+          College of the region in 1996 on the name of great Indian legendry
+          Maharana Pratap College of Technology, which is now the parent
+          organization of the group society under the leadership of Lt. Shri Ram
+          Singh Dhakre finished its second venture by establishing first Dental
+          College of the region in 2003, this college has set now dimension in
+          the field of medical education. After this in late 20s the society
+          promoted and established nursing college , Allied Science Col lege and
+          Management institute.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- course registeration start -->
+<section>
+  <div class="container-fluid">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <h1>Register your course</h1>
+          <p class="pb-3">
+            Course Registration means the official recording of a student's name
+            to study a course or courses.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- b.tech -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682075199514-0cf57960bfa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=757&q=80"
+              class="card-img-top img-fluid"
+              width="300px !important"
+              height="200px !important"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">B.Tech</h5>
+              <p class="card-text">
+                B.Tech is a professional undergraduate engineering degree
+              </p>
+
+              <% if(btech){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#btech"
+              >
+                REGISTER
+              </button>
+              <% } %>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- bca -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1669652639356-f5cb1a086976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">BCA</h5>
+              <p class="card-text">
+                BCA is a three-year Bachelor's Degree in Computer Application
+              </p>
+              <% if(bca){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#bca"
+              >
+                REGISTER
+              </button>
+        <% } %>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- mca -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbGxlZ2UlMjBzdHVkZW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              class="card-img-top img-fluid"
+              height="200px !important"
+              width="300px !important"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">MCA</h5>
+              <p class="card-text">
+                MCA is a professional post-graduation degree in CSE
+              </p>
+              <% if(mca){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#mca"
+              >
+                REGISTER
+              </button>
+        <% } %>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- mtech -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbGxlZ2UlMjBzdHVkZW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              class="img-last"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">M.Tech</h5>
+              <p class="card-text">
+                M.Tech is a professional post-graduate engineering degree
+              </p>
+              <% if(mtech){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#mtech"
+              >
+                REGISTER
+              </button>
+        <% } %>
+
+            </div>
+          </div>
+        </div>
+        <!-- mba -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbGxlZ2UlMjBzdHVkZW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              class="img-last"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">MBA</h5>
+              <p class="card-text">
+                MBA is professional master's in business degree.
+              </p>
+              <% if(mba){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#mba"
+              >
+                REGISTER
+              </button>
+        <% } %>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- bba -->
+        <div class="col-md-4 pb-4">
+          <div class="card card-anim">
+            <img
+              src="https://media.istockphoto.com/id/1301397300/photo/portrait-of-young-woman-stock-photo.webp?b=1&s=170667a&w=0&k=20&c=YNKLBmo66th0Uugob4qpoaMNEMpA-EhpK89St_hDrBs="
+              class="img-last"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">BBA</h5>
+              <p class="card-text">
+                BBA is a professional undergraduate degree.
+              </p>
+              <% if(bba){ %>
+              <a href="/course_display">
+                <button class="card-button">Display</button></a
+              >
+              <% } else{ %>
+              <button
+                class="card-button"
+                data-bs-toggle="modal"
+                data-bs-target="#bba"
+              >
+                REGISTER
+              </button>
+        <% } %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- images -->
+<section class="pb-4">
+  <div class="container-fluid images-bg">
+    <div class="container bg-2">
+      <div class="row">
+        <swiper-container class="mySwiper p-5 mt-3" init="false">
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/college.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/p81.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/p81.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/hostal.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images2/camp/9.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images2/camp/9.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/college.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="http://www.mpct.org/images/p81.jpg" alt=""
+          /></swiper-slide>
+          <!-- <swiper-slide>Slide 9</swiper-slide> -->
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--btech modal -->
+<div
+  class="modal fade"
+  id="btech"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">B.Tech</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- form start -->
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="Phone"
+              name="course"
+              value="b.tech"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--bca modal -->
+<div
+  class="modal fade"
+  id="bca"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">BCA</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="Phone"
+              name="course"
+              value="BCA"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--mca modal -->
+<div
+  class="modal fade"
+  id="mca"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MCA</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="Phone"
+              name="course"
+              value="MCA"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--mtech modal -->
+<div
+  class="modal fade"
+  id="mtech"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">M.Tech</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="Course"
+              name="course"
+              value="m.tech"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--mba modal -->
+<div
+  class="modal fade"
+  id="mba"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MBA</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="course"
+              name="course"
+              value="MBA"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--bba modal -->
+<div
+  class="modal fade"
+  id="bba"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">BBA</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="/course_insert" method="post">
+          <div class="mb-3">
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="name"
+              name="name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Phone</label>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>City</label>
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Address"
+              name="address"
+              class="form-control"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label>Course</label>
+            <input
+              type="text"
+              placeholder="course"
+              name="course"
+              value="BBA"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./footer.ejs') %>

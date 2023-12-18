@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background: #645858;
+    box-shadow:rgba(0, 0, 0, 1) 4px 4px 20px -5px;
+}
+.nav-list {
+    font-size: 22px;
+   color: #16171d;
+
+}
+.navbar-item{
+    padding: 0px 3px ;
+    margin-left: 20px;
+}
+.nav-link{
+   color: #16171d !important;
+
+}
+.nav-link:hover{
+    /* background-color:black; */
+    color: white !important;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    transition:ease 0.4s;
+}
+
+#mynavbar .item-btn a {
+  font-size: 20px !important;
+  color: #16171d !important;
+  margin-right: 20px !important;
+  transition: ease-out 0.3s !important;
+  box-shadow: -2px 3px 17px !important;
+  background-color:  #b59bb4 !important;
+  text-decoration: none !important;
+  padding:10px 15px !important;
+  border-radius: 20px !important;
+}
+#mynavbar .item-btn a:hover{
+  color: white;
+  letter-spacing: 2px;
+  /* background: #000; */
+}
+.dropdown .btn{
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+}
+
+ .profile a img{
+  border-radius: 50% !important;
+}
+
+
+
+
+.dashboard{
+    margin-top: 127px;
+}
+.wlcm-mpct{
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 103px 0 40px;
+}
+.bg-1{
+    /* background-color: #6f7daf42; */
+    background: #0000006e;
+    border-radius: 20px;
+    padding: 55px;
+    box-shadow:rgba(0, 0, 0, 1) 4px 4px 20px -5px;
+}
+.bg-1 h1{
+    padding-bottom:15px;
+}
+.bg-1 p{
+    padding: 0px 117px;
+}
+.card{
+    width: 18rem !important;
+    border: none !important;
+}
+.card-button {
+    width: 127px;
+    height: 48px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    background: #16171d;
+    transition: 0.4s;
+}
+.card-button:hover{
+    color: black;
+    background: #69719142;
+    letter-spacing: 2px;
+}
+.card-img-top{
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.card-body:hover{
+    background-color:#4a4e61 ;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    transition: ease-in-out 0.3s;
+}
+.img-last{
+    width: 18rem;
+    border-radius: 5px;
+}
+.images-bg{
+    width:100%;
+    height: 400px;
+}
+/* bg-2  slider*/
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 7px;
+
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+.bg-2{
+    background: #0000006e;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 90%;
+    height: 300px;
+    box-shadow:rgb(0 0 0 / 98%) 4px 4px 20px -2px;
+    position: relative;
+    top: 11%;
+}
+/* footer */
+.footer-bg{
+    width: 100%;
+    background:#645858;
+  }
+  .heading-1 .h{
+  
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .heading-1{
+    line-height: 2;
+  }
+  .heading-1 p{
+   
+    font-size: 17px;
+    color: #b59bb4;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  
+  .heading-1 a{
+    text-decoration: none;
+    margin-right: 18px;
+    color: darkmagenta;
+    font-size: 26px;
+  }
+  .heading-2 .h-2{
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .heading-2{
+    line-height:2;
+  
+  }
+  .heading-2 .fa-solid{
+    font-size: 21px;
+    color: darkmagenta;
+  }
+  .heading-2 .add{
+    color: #b59bb4;
+    font-size: 18px;
+  }
+  .logo .lo{
+    width: 200px;
+  }
+  /* last footer */
+  .last-footer{
+    background: #b59bb4;
+    color: black;
+  }
+  .linkdin{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .linkdin:hover{
+    letter-spacing: 2px;
+    transition: all ease 0.5s;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+  }
+

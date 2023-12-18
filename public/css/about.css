@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background: #645858;
+    box-shadow:rgba(0, 0, 0, 1) 4px 4px 20px -5px;
+
+
+}
+.nav-list {
+    font-size: 22px;
+   color: #16171d;
+
+}
+.navbar-item{
+    padding: 0px 3px ;
+}
+.nav-link{
+   color: #16171d !important;
+
+}
+.nav-link:hover{
+    background-color:black;
+    color: white !important;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    transition:ease 0.4s;
+}
+.name{
+    background-color:#16171d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 35px;
+
+}
+.name:hover{
+    color: black;
+    letter-spacing: 1px;
+    transition:ease-out 0.4s;
+    background: white;
+}
+
+.profile-photo{
+    width: 90px;
+    border-radius: 10%;  
+}
+.ab-img{
+    margin-top: 250px;
+    width: 90% !important;
+    height: 425px !important;
+    margin-bottom: 25px !important;
+    border-radius: 25px;
+    box-shadow: #16171d -4px -5px 16px;
+    transition: all 0.3s ease;
+
+}
+.ab-img:hover{
+    width:100% !important ;
+    height: 435px !important;
+    cursor: pointer !important;
+}
+.about{
+    margin-top: 200px !important;
+}
+/* footer */
+.footer-bg{
+    width: 100%;
+    background:#645858;
+  }
+  .heading-1 .h{
+  
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .heading-1{
+    line-height: 2;
+  }
+  .heading-1 p{
+   
+    font-size: 17px;
+    color: #b59bb4;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+  }
+  
+  .heading-1 a{
+    text-decoration: none;
+    margin-right: 18px;
+    color: darkmagenta;
+    font-size: 26px;
+  }
+  .heading-2 .h-2{
+    
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .heading-2{
+    line-height:2;
+  
+  }
+  .heading-2 .fa-solid{
+    font-size: 21px;
+    color: darkmagenta;
+  }
+  .heading-2 .add{
+    color: #b59bb4;
+    font-size: 18px;
+  }
+  .logo .lo{
+    width: 200px;
+  }
+  /* last footer */
+  .last-footer{
+    background: #b59bb4;
+    color: black;
+  }
+  .linkdin{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .linkdin:hover{
+    letter-spacing: 2px;
+    transition: all ease 0.5s;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+  }

@@ -1,0 +1,43 @@
+@media (max-width:570px) {
+  .a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+    
+}
+@media (max-width:570px) {
+  .b{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin: 0px 95px;  
+  } 
+}
+@media (max-width:570px) {
+  .profile-photo{
+    /* margin-top: 10px; */
+    margin: 10px  130px;  
+    height: 110px;
+  } 
+}
+@media (max-width: 756px){
+    .card{
+       position: relative;
+       left: 20%;
+    }
+}
+@media (max-width: 390px){
+    .card{
+       position: relative;
+       left: 10%;
+    }
+}
+@media (max-width: 412px){
+    .card{
+       position: relative;
+       left: 8%;
+    }
+}
+
